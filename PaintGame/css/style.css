@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background:#FFFFFF;
+}
+
+.app {
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:700px;
+    height: 700px;
+}
+
+.app .tools{
+    height:50px;
+    display:flex;
+    align-items:center;
+    padding:0px 10px;
+    background:#b5b1b2;
+}
+.app .tools .title{
+    font-weight:600;
+    width: 80px;
+}
+
+.app .tools .title
+.app .tools .size
+.app .tools .color{
+    margin: 0px 10px;
+}
+
+.app .tools .type label {
+    width:30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 2px;
+}
+
+.app .tools .size input {
+    height:10px;
+}
+
+.app .tools .actions {
+    flex:1;
+    text-align:right;
+}
+
+.app .tools .actions button{
+    padding: 5px 10px;
+}

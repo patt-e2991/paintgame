@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paint</title>
+</head>
+<body>
+    <div class="app">
+    <div class="tools">
+        <input type="radio" name= "pen-type" id="pen-pencil" checked>
+            <label for= "pen-pencil">
+                <i class="fa fa-pencil"></i>
+            </label>
+            <input type="radio" name= "pen-type" id="pen-brush">
+            <label for= "pen-brush">
+                <i class="fa fa-paint-brush"></i>
+            </label>
+    </div>
+    <div class ="size">
+        <label for ="pen-size">Size</label>
+        <input type = "range" id="pen-size" min="1" max="60">
+    </div>
+    <div class="color">
+        <label for="pen-color">Color</label>
+        <input type ="color" id="pen-color" value="#000">
+    </div>
+    <div class="actions"></div>
+    <button id="reset-canvas">Reset</button>
+    <button id="save-canvas">Save</button>
+</div>
+    <canvas id="canvas-wrapper"></canvas>
+
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+</body>
+</html>
